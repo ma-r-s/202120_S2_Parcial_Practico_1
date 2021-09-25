@@ -21,30 +21,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+package co.edu.uniandes.dse.parcial.exceptions;
 
-package co.edu.uniandes.dse.ZZZ.entities;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-
-import lombok.Data;
-import uk.co.jemos.podam.common.PodamExclude;
-
-/**
- * Entidad genérica de la que heredan todas las entidades. Contiene la
- * referencia al atributo id
- *
- * @author ISIS2603
+/*
+ * Excepción que se lanza cuando se realiza una operación ilegal
  */
+public class IllegalOperationException extends Exception {
 
-@Data
-@MappedSuperclass
-public abstract class BaseEntity {
+	private static final long serialVersionUID = 1L;
 
-	@PodamExclude
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	public IllegalOperationException(String message) {
+		super(message);
+	}
 }
+

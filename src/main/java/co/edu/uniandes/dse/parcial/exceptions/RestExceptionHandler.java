@@ -1,4 +1,4 @@
-package co.edu.uniandes.dse.ZZZ.exceptions;
+package co.edu.uniandes.dse.parcial.exceptions;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.PRECONDITION_FAILED;

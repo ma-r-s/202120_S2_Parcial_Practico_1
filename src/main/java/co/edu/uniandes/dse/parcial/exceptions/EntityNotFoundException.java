@@ -21,17 +21,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-package co.edu.uniandes.dse.ZZZ.exceptions;
+package co.edu.uniandes.dse.parcial.exceptions;
 
 /*
- * Excepción que se lanza cuando se realiza una operación ilegal
+ * Excepción que se lanza cuando en el proceso de búsqueda no se encuenta una entidad
  */
-public class IllegalOperationException extends Exception {
-
+public class EntityNotFoundException extends Exception {
+	
 	private static final long serialVersionUID = 1L;
-
-	public IllegalOperationException(String message) {
+	
+	public EntityNotFoundException(String message) {
 		super(message);
 	}
 }
-

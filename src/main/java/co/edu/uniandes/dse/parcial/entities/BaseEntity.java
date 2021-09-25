@@ -21,16 +21,30 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-package co.edu.uniandes.dse.ZZZ.exceptions;
 
-/*
- * Excepción que se lanza cuando en el proceso de búsqueda no se encuenta una entidad
+package co.edu.uniandes.dse.parcial.entities;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+import lombok.Data;
+import uk.co.jemos.podam.common.PodamExclude;
+
+/**
+ * Entidad genérica de la que heredan todas las entidades. Contiene la
+ * referencia al atributo id
+ *
+ * @author ISIS2603
  */
-public class EntityNotFoundException extends Exception {
-	
-	private static final long serialVersionUID = 1L;
-	
-	public EntityNotFoundException(String message) {
-		super(message);
-	}
+
+@Data
+@MappedSuperclass
+public abstract class BaseEntity {
+
+	@PodamExclude
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 }

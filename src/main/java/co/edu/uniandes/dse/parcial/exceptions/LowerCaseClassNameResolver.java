@@ -1,4 +1,4 @@
-package co.edu.uniandes.dse.ZZZ.exceptions;
+package co.edu.uniandes.dse.parcial.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase;
