@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "2f848939-05d1-4808-a5c7-ccc2bc381c65",
+		"name": "VehiculoTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los vehiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
